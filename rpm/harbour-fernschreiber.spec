@@ -6,6 +6,7 @@
 Name:       harbour-fernschreiber
 
 # >> macros
+%define _buildhost reproducible-builder
 # << macros
 %define __provides_exclude_from ^%{_datadir}/.*$
 %define __requires_exclude ^(libtdjson|libopenh264).*$
@@ -16,7 +17,7 @@ Version:    0.19
 Release:    1
 Group:      Qt/Qt
 License:    LICENSE
-URL:        http://werkwolf.eu/
+URL:        https://github.com/JimKnopfIoT/harbour-fernschreiber
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-fernschreiber.yaml
 Requires:   sailfishsilica-qt5 >= 0.10.9
