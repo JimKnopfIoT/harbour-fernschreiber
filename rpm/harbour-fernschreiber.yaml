@@ -38,7 +38,7 @@ Macros:
   - '__provides_exclude_from;^%{_datadir}/.*$'
   # libtdjson and (with voicecalls) libopenh264 ship inside the package, in the
   # binary's rpath dir — neither is provided by any Sailfish repository.
-  - '__requires_exclude;^(libtdjson|libopenh264).*$'
+  - '__requires_exclude;^(libtdjson|libopenh264|libvpx).*$'
   - '_binary_payload;w6.xzdio'
 
 # Build dependencies without a pkgconfig setup can be listed here
